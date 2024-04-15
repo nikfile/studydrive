@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test1"
+    android:background="@color/cyan"
+    android:padding="24dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_question1"
+        android:text="Вопросов Осталось"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:id="@+id/image1"
+        android:layout_below="@id/total_question1"
+        android:layout_centerHorizontal="true"
+        android:src="@color/light_cyan"
+        android:layout_marginTop="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question1"
+        android:text="This will be the question"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout1"
+        android:layout_below="@id/question1"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/Ans_A1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Ans A"
+            android:textSize="17dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Ans_B1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Ans B"
+            android:textSize="17dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Ans_C1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Ans C"
+            android:textSize="17dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn1"
+        android:text="Дальше"
+        android:layout_below="@id/choices_layout1"
+        android:textSize="17dp"
+        android:backgroundTint="@color/light_blue"
+        android:layout_marginTop="25dp"/>
+
+
+</RelativeLayout>
